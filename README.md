@@ -77,6 +77,8 @@ curl -fsSL https://raw.githubusercontent.com/jing6616011111/boke/main/install.sh
 
 项目已配置 `output: "standalone"`。也可以手动构建并用 PM2 管理 Node 进程：
 
+1Panel 反向代理配置见：[docs/1panel-reverse-proxy.md](docs/1panel-reverse-proxy.md)
+
 ```bash
 npm ci
 npm run build
