@@ -63,7 +63,19 @@ npm run build
 
 ## VPS 部署
 
-项目已配置 `output: "standalone"`。推荐直接在 VPS 上构建并用 PM2 管理 Node 进程：
+一键安装：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jing6616011111/boke/main/install.sh | sudo bash
+```
+
+非交互安装：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jing6616011111/boke/main/install.sh | sudo env ADMIN_USERNAME=admin ADMIN_PASSWORD='change-me' bash
+```
+
+项目已配置 `output: "standalone"`。也可以手动构建并用 PM2 管理 Node 进程：
 
 ```bash
 npm ci
