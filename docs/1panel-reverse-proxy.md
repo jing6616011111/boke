@@ -14,6 +14,18 @@ https://你的域名/login
 
 ## 1. 确认博客服务正常
 
+如果还没有安装博客，普通用户执行：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jing6616011111/boke/main/install.sh | sudo bash
+```
+
+如果你已经是 `root` 用户，或系统没有 `sudo`：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jing6616011111/boke/main/install.sh | bash
+```
+
 在 VPS 上执行：
 
 ```bash

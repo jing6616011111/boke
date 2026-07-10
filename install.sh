@@ -22,7 +22,7 @@ info() {
 
 need_root() {
   if [ "${EUID}" -ne 0 ]; then
-    fail "Please run as root: curl -fsSL https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${BRANCH}/install.sh | sudo bash"
+    fail "Please run as root. If sudo exists: curl -fsSL https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${BRANCH}/install.sh | sudo bash. If already root: curl -fsSL https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${BRANCH}/install.sh | bash"
   fi
 }
 
